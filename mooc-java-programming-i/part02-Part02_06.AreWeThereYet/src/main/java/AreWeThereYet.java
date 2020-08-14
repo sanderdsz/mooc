@@ -1,9 +1,10 @@
 
 import java.util.Scanner;
 
-public class DoubleInput {
+public class AreWeThereYet {
 
     public static void main(String[] args) {
-       
+        Scanner scanner = new Scanner(System.in);
+
     }
 }
