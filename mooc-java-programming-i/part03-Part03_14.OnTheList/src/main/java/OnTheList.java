@@ -12,10 +12,16 @@ public class OnTheList {
             String input = scanner.nextLine();
             if (input.equals("")) {
                 break;
-            }
-
+            } 
             list.add(input);
         }
-
+        System.out.println("Search for? ");
+            String search = scanner.nextLine();
+            
+            if (list.contains(search)) {
+                System.out.println(search + " was found!");
+            } else {
+                System.out.println(search + " was not found!");
+            }
     }
 }
