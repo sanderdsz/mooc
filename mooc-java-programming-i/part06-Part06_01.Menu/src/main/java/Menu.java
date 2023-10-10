@@ -8,6 +8,21 @@ public class Menu {
     public Menu() {
         this.meals = new ArrayList<>();
     }
+    
+    public void addMeal(String meal) {
+        if (!meals.contains(meal)) {
+            meals.add(meal);
+        }
+    }
+        
+    public void printMeals() {
+        for(String meal : meals) {
+            System.out.println(meal);
+        }
+    }
+    
+    public void clearMenu() {
+        meals = new ArrayList<String>();
+    }
 
-    // implement the required methods here
 }
