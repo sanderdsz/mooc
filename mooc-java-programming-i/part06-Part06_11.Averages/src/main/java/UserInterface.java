@@ -43,10 +43,11 @@ public class UserInterface {
             System.out.print(grade + ": ");
             printsStars(stars);
             System.out.println("");
-
+            
             grade = grade - 1;
         }
-        
+        printAveragePoints(register);
+        printAverageGrades(register);
     }
 
     public static void printsStars(int stars) {
@@ -54,5 +55,15 @@ public class UserInterface {
             System.out.print("*");
             stars--;
         }
+    }
+    
+    public static void printAveragePoints(GradeRegister register) {
+        String builder = "The average of points: " + register.averageOfPoints();
+        System.out.println(builder);
+    }
+    
+    public static void printAverageGrades(GradeRegister register) {
+        String builder = "The average of grades: " + register.averageOfGrades();
+        System.out.println(builder);
     }
 }
