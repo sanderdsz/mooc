@@ -8,5 +8,9 @@ public class Main {
         
         // Write your program here -- consider breaking the program into 
         // multiple classes.
+        
+        GradeList list = new GradeList();
+        UserInterface ui = new UserInterface(list, scanner);
+        ui.start();
     }
 }
